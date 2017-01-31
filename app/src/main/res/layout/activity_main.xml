@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="de.tu_chemnitz.sse.and2015.completealarm.MainActivity">
+
+    <TextView
+        android:text="@string/did_you_set_the_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView"
+        android:textSize="18sp" />
+
+    <TimePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timePicker"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:animateLayoutChanges="false"
+        android:headerBackground="@android:color/holo_blue_dark"
+        android:numbersSelectorColor="@android:color/black" />
+
+    <Switch
+        android:text="@string/alarm_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/switch1"
+        android:switchMinWidth="55dp"
+        android:switchPadding="75dp"
+        android:splitTrack="false"
+        tools:ignore="UnusedAttribute"
+        android:layout_below="@+id/timePicker"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
